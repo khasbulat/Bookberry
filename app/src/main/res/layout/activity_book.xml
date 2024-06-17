@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2A679"
+    tools:context=".MainActivity5">
+
+    <!-- Назад кнопка -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_back"
+         />
+
+    <!-- Обложка книги -->
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/back_button"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/harry_potter"
+        android:layout_marginTop="20dp" />
+
+    <!-- Рейтинг -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/book_cover"
+        android:layout_toEndOf="@id/book_cover"
+        android:layout_marginStart="10dp"
+        android:text="4.5★"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp" />
+
+    <!-- Кнопка "Избранное" -->
+    <ImageButton
+        android:id="@+id/favorite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_toEndOf="@id/book_cover"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_favorite"
+         />
+
+    <!-- Название книги -->
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_cover"
+        android:layout_centerHorizontal="true"
+        android:text="Гарри Поттер и узник Азкабана"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <!-- Автор книги -->
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_title"
+        android:layout_centerHorizontal="true"
+        android:text="Дж. Роулинг"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Кнопка "Получить по подписке" -->
+    <Button
+        android:id="@+id/subscribe_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_author"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Получить по подписке" />
+
+    <!-- Ссылка "Другие способы оплаты" -->
+    <TextView
+        android:id="@+id/payment_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subscribe_button"
+        android:layout_centerHorizontal="true"
+        android:text="Другие способы оплаты >"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Вкладки "О книге" и "Отзывы" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_options"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/about_book_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="О книге"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/reviews_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Отзывы"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Описание книги -->
+
+    <!-- Оцените книгу -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_options"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оцените книгу"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

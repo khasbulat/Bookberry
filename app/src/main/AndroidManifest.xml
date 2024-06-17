@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bookberry"
+        tools:targetApi="31">
+
+        <activity android:name=".MainActivity1"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity2"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity3"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity4"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity5"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity6"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity7"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity8"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity9"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity10"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity11"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity12"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity13"
+            android:theme="@style/Theme.AppCompat" />
+        <activity android:name=".MainActivity14"
+            android:theme="@style/Theme.AppCompat" />
+
+    </application>
+
+</manifest>

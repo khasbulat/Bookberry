@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#D2A679"
+    tools:context=".MainActivity">
+
+    <!-- Профиль пользователя -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#ECE0D1"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/avatar"
+            android:layout_marginEnd="16dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="donjuan98"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jackdnls97@gmail.com"
+                android:textColor="#666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Кнопки меню -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Изменить данные"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки читалки"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/bookmarks_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Закладки"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/catalog_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Каталог"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/discussions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обсуждения"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/referal_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пригласить друга"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/support_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Support"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/api_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="API"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выход"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#000"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:drawablePadding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Нижняя навигационная панель -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#A05252"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_catalog" />
+
+        <ImageButton
+            android:id="@+id/nav_search"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search" />
+        <ImageButton
+            android:id="@+id/nav_reading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_read" />
+        <ImageButton
+            android:id="@+id/nav_library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_library" />
+
+        <ImageButton
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+</LinearLayout>

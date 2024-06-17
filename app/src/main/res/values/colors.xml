@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#C6C4C4</color>
+    <color name="purple_500">#C6C4C4</color>
+    <color name="purple_700">#C6C4C4</color>
+    <color name="teal_200">#C6C4C4</color>
+    <color name="teal_700">#C6C4C4</color>
+    <color name="black">#C6C4C4</color>
+    <color name="white">#C6C4C4</color>
+    <color name="background_color">#D2B48C</color> <!-- A shade of tan -->
+    <color name="button_color">#B22222</color> <!-- A shade of brown -->
+    <color name="text_color">#FFFFFF</color> <!-- White -->
+</resources>
